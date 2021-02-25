@@ -64,13 +64,13 @@
                                 <p>Fearsome monsters Godzilla and King Kong square off in an epic battle for the ages, while humanity looks to wipe out both of the creatures and take back the planet once and for all.</p>
                                 <div class="movie-details-group-icons">
                                     <ul class="list-unstyled m-0">
-                                        <li class="list-inline-item"><a href="#"><i class="icon-play"></i>Trailer</a></li>
+                                        <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#movieTrailer"><i class="icon-play"></i>Trailer</a></li>
                                         <li class="list-inline-item"><a href="#"><i class="icon-download"></i>Download</a></li>
                                         <li class="list-inline-item"><a href="#"><i class="icon-share-2"></i>Share</a></li>
                                     </ul>
                                 </div>
                                 <div class="watch-button">
-                                    <a href="#" class="play-btn"><i class="icon-play"></i></a>
+                                    <a href="#" class="play-btn" data-toggle="modal" data-target="#videoModal"><i class="icon-play"></i></a>
                                     <div class="watch-text">Watch Now <div class="duration">190 minutes</div></div>
                                 </div>
                             </div>
@@ -91,13 +91,13 @@
                                 <p>Fearsome monsters Godzilla and King Kong square off in an epic battle for the ages, while humanity looks to wipe out both of the creatures and take back the planet once and for all.</p>
                                 <div class="movie-details-group-icons">
                                     <ul class="list-unstyled m-0">
-                                        <li class="list-inline-item"><a href="#"><i class="icon-play"></i>Trailer</a></li>
+                                        <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#movieTrailer"><i class="icon-play"></i>Trailer</a></li>
                                         <li class="list-inline-item"><a href="#"><i class="icon-download"></i>Download</a></li>
                                         <li class="list-inline-item"><a href="#"><i class="icon-share-2"></i>Share</a></li>
                                     </ul>
                                 </div>
                                 <div class="watch-button">
-                                    <a href="#" class="play-btn"><i class="icon-play"></i></a>
+                                    <a href="#" class="play-btn" data-toggle="modal" data-target="#videoModal"><i class="icon-play"></i></a>
                                     <div class="watch-text">Watch Now <div class="duration">190 minutes</div></div>
                                 </div>
                             </div>
@@ -118,13 +118,13 @@
                                 <p>Fearsome monsters Godzilla and King Kong square off in an epic battle for the ages, while humanity looks to wipe out both of the creatures and take back the planet once and for all.</p>
                                 <div class="movie-details-group-icons">
                                     <ul class="list-unstyled m-0">
-                                        <li class="list-inline-item"><a href="#"><i class="icon-play"></i>Trailer</a></li>
+                                        <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#movieTrailer"><i class="icon-play"></i>Trailer</a></li>
                                         <li class="list-inline-item"><a href="#"><i class="icon-download"></i>Download</a></li>
                                         <li class="list-inline-item"><a href="#"><i class="icon-share-2"></i>Share</a></li>
                                     </ul>
                                 </div>
                                 <div class="watch-button">
-                                    <a href="#" class="play-btn"><i class="icon-play"></i></a>
+                                    <a href="#" class="play-btn" data-toggle="modal" data-target="#videoModal"><i class="icon-play"></i></a>
                                     <div class="watch-text">Watch Now <div class="duration">190 minutes</div></div>
                                 </div>
                             </div>
@@ -292,6 +292,30 @@
             </div>
         </div>
     </footer>
+
+    <!-- Movie Trailer VIdeo Modal -->
+    <div class="modal fade movie-video-modal" id="movieTrailer" tabindex="-1" aria-labelledby="movieTrailerLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/odM92ap8_c0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- VIdeo Modal -->
+    <div class="modal fade movie-video-modal" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <iframe width="100%" height="400" src="https://www.youtube.com/embed/8Qn_spdM5Zg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 
     <script src="assets/js/jquery-3.5.1.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
