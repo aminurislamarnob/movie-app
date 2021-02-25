@@ -9,8 +9,20 @@
         items: 1,
         dots: true,
         margin: 0,
-        autoplay: true,
+        autoplay: false,
         loop: true
     })
+    
+
+    //Pause youtube video
+    $('#videoModal').on('hidden.bs.modal', function (event) {
+        $('.modal iframe').attr('src', $('iframe').attr('src'));
+    });
+
+    //Search Trigger
+    $('.search-trigger').click(function () {
+        $('.float-search-box').toggleClass('active');
+        $(this).find('i').toggleClass('fa-times');
+    });
     
 }(jQuery));	

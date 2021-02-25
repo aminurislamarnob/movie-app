@@ -104,6 +104,9 @@ strong, b {
 .mb-30{
     margin-bottom: 30px;
 }
+.mb-20{
+    margin-bottom: 20px;
+}
 .pb-60{
     padding-bottom: 60px;
 }
@@ -139,6 +142,9 @@ strong, b {
 }
 
 /*Menu Area*/
+header{
+    position: relative;
+}
 .main-menu, .main-menu ul {
     margin: 0;
     padding: 0;
@@ -227,10 +233,14 @@ strong, b {
 }
 .header-menu-area {
     background: var(--movie-black-2);
+    box-shadow: inset 0px -1px 0px rgb(255 255 255 / 5%);
 }
 .header-right-area a {
     color: var(--movie-white);
     font-size: 16px;
+}
+.header-right-area li{
+    position: relative;
 }
 
 .movie-btn {
@@ -253,6 +263,33 @@ strong, b {
 }
 .header-right-area {
     color: var(--movie-white);
+}
+
+/*Header Search*/
+.float-search-box {
+    position: absolute;
+    right: -9px;
+    left: auto;
+    overflow: hidden;
+    bottom: -60px;
+    opacity: 0;
+    visibility: hidden;
+    transition: .4s;
+}
+.float-search-box.active{
+    bottom: -73px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 9;
+}
+.float-search-box input.form-control {
+    min-width: 350px;
+    background: #151522;
+    border-color: rgb(255 255 255 / 20%);
+}
+
+.float-search-box button {
+    float: right;
 }
 
 /*Slider area*/
@@ -484,6 +521,154 @@ strong, b {
     font-size: 16px;
     line-height: 26px;
     opacity: 0.7;
+}
+
+
+/*Login Page*/
+.form-section {
+    background: #151522;
+}
+
+.form-container {
+    background: #1F1F2C;
+    border-radius: 10px;
+    margin: 165px 0;
+}
+
+.form-right-side {
+    height: 100%;
+    padding: 50px 50px 50px 20px;
+}
+
+.form-header h1 {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 38px;
+    color: #fff;
+    margin-bottom: 3px;
+}
+
+.form-header p {
+    font-size: 12px;
+    line-height: 22px;
+    color: #fff;
+    opacity: 0.7;
+    margin: 0;
+}
+
+.form-header {
+    margin-bottom: 30px;
+}
+
+.form-right-side label {
+    font-size: 14px;
+    line-height: 20px;
+    display: block;
+    color: #fff;
+    text-transform: capitalize;
+}
+.form-control {
+    background: transparent;
+    border: 1.5px solid rgb(255 255 255 / 50%);
+    border-radius: 5px;
+    font-size: 14px;
+    height: 45px;
+    line-height: 45px;
+}
+
+.form-control:focus {
+    border-color: #EF233C;
+    background: transparent;
+}
+
+.form-link a {
+    color: #fff;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+.btn-movie {
+    background: #EF233C;
+    box-shadow: 0px 4px 8px rgb(239 35 60 / 20%);
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    font-size: 13px;
+    padding: 12px 10px;
+    text-transform: capitalize;
+    transition: .3s;
+}
+.btn-movie:hover {
+    background: #fff;
+    color: #ef233c;
+}
+
+.form-link {
+    margin-bottom: 20px;
+}
+
+.form-bottom-link {
+    text-align: center;
+    font-size: 15px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+.form-bottom-link a {
+    color: #ef233c;
+}
+
+.form-cover-bg img {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.form-cover-bg .form-light-logo {
+    position: absolute;
+    left: 45px;
+    top: 50px;
+    z-index: 1;
+}
+
+.form-cover-bg .form-cover {
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-cover-bg {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+
+.form-cover-bg::after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #EF233C;
+    opacity: 0.3;
+    content: "";
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.social-links a:hover {
+    color: #ef233c;
+}
+.modal button.close {
+    position: absolute;
+    right: -35px;
+    top: 0;
+    opacity: 1;
+    text-shadow: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 30px;
+    background: #EF233C;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
 }
 
 /*Footer Style*/

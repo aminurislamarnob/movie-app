@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Star Wars II - Movie App</title>
-    <link rel="icon" href="assets/img/fav.ico" type="image/gif">
+    <link rel="icon" href="assets/img/light-logo.png" type="image/gif">
     <!--CSS Styles-->
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
@@ -19,12 +19,12 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-md-4">
-                        <a href="#" class="logo"><img src="assets/img/logo.png" alt="Movie App"></a>
+                        <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="Movie App"></a>
                     </div>
                     <div class="col-md-4">
                         <div class="primary-menu">
                             <ul class="main-menu text-center">
-                                <li class="current-menu-item"><a href="#">Home</a></li>
+                                <li class="current-menu-item"><a href="index.html">Home</a></li>
                                 <li><a href="#">Movie</a></li>
                                 <li><a href="#">Drama</a></li>
                                 <li><a href="#">Series</a></li>
@@ -34,9 +34,16 @@
                     <div class="col-md-4 text-right">
                         <div class="header-right-area">
                             <ul class="list-unstyled m-0">
-                                <li class="list-inline-item"><a href="#" class="search-trigger"><i class="fa fa-search"></i></a></li>
-                                <li class="list-inline-item"><a href="#" class="inline-link">Login</a>/<a href="#" class="inline-link">Sign Up</a></li>
-                                <li class="list-inline-item"><a href="#" class="movie-btn">Subscribe Now</a></li>
+                                <li class="list-inline-item">
+                                    <a href="#" class="search-trigger"><i class="fa fa-search"></i></a>
+                                    <div class="float-search-box">
+                                        <form action="">
+                                            <input class="form-control" type="text" name="search" id="search" placeholder="Please type to search movie...">
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="list-inline-item"><a href="login.html" class="inline-link">Login</a>/<a href="#" class="inline-link">Sign Up</a></li>
+                                <li class="list-inline-item"><a href="register.html" class="movie-btn">Subscribe Now</a></li>
                             </ul>
                         </div>
                     </div>
