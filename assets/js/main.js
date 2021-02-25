@@ -22,7 +22,8 @@
     //Search Trigger
     $('.search-trigger').click(function () {
         $('.float-search-box').toggleClass('active');
-        $(this).find('i').toggleClass('fa-times');
+        $(this).find('i').toggleClass('icon-x');
+        $(this).find('i').toggleClass('icon-search');
     });
     
 }(jQuery));	

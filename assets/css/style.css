@@ -141,6 +141,50 @@ strong, b {
     max-width: 1440px;
 }
 
+/*CUstom Font Icons*/
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?gm34i5');
+    src:  url('../fonts/icomoon.eot?gm34i5#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?gm34i5') format('truetype'),
+      url('../fonts/icomoon.woff?gm34i5') format('woff'),
+      url('../fonts/icomoon.svg?gm34i5#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-download:before {
+    content: "\e900";
+  }
+  .icon-play:before {
+    content: "\e901";
+  }
+  .icon-search:before {
+    content: "\e902";
+  }
+  .icon-share-2:before {
+    content: "\e903";
+  }
+  .icon-x:before {
+    content: "\e904";
+  }  
+
 /*Menu Area*/
 header{
     position: relative;
@@ -266,6 +310,11 @@ header{
 }
 
 /*Header Search*/
+a.search-trigger i {
+    font-size: 18px;
+    position: relative;
+    top: 3px;
+}
 .float-search-box {
     position: absolute;
     right: -9px;
@@ -379,9 +428,9 @@ header{
     line-height: 45px;
     box-shadow: 1px 4px 10px rgba(239, 35, 60, 0.25);
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 22px;
 }
-.play-btn:hover {
+.play-btn:hover, .movie-details-group-icons a:hover i {
     background: #ef233c;
     color: #fff;
 }
@@ -410,6 +459,43 @@ header{
     text-transform: capitalize;
     margin-left: 15px;
 }
+.movie-detail-slider p {
+    margin-bottom: 20px;
+}
+
+.movie-details-group-icons {
+    margin-bottom: 50px;
+}
+
+.movie-details-group-icons a i {
+    display: inline-block;
+    border: 1px solid #fff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 37px;
+    font-size: 17px;
+    border-radius: 50%;
+    margin-right: 10px;
+    transition: .3s;
+}
+
+.movie-details-group-icons li:not(:last-child) {
+    margin-right: 40px;
+}
+
+.movie-details-group-icons a {
+    font-size: 14px;
+}
+
+.movie-details-group-icons a i.icon-play::before {
+    margin-left: 3px;
+}
+
+.movie-details-group-icons a i.icon-share-2::before {
+    margin-left: -2px;
+}
+
 /*Movie Thumbnail Design*/
 .section-title h2 {
     text-transform: uppercase;
