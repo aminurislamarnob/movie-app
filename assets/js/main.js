@@ -25,5 +25,16 @@
         $(this).find('i').toggleClass('icon-x');
         $(this).find('i').toggleClass('icon-search');
     });
+
+    //Mobile Menu
+    $('.mobile-menu-trigger').click(function(){
+        $('.primary-menu, .mobile-menu-backdrop').toggleClass('active');
+        $(this).toggleClass('active');
+    });
+
+    $('.mobile-menu-backdrop').click(function(){
+        $('.primary-menu, .mobile-menu-trigger').toggleClass('active');
+        $(this).toggleClass('active');
+    });
     
 }(jQuery));	
