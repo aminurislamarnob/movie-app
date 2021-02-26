@@ -20,7 +20,8 @@
     });
 
     //Search Trigger
-    $('.search-trigger').click(function () {
+    $('.search-trigger').click(function (e) {
+        e.preventDefault();
         $('.float-search-box').toggleClass('active');
         $(this).find('i').toggleClass('icon-x');
         $(this).find('i').toggleClass('icon-search');
